@@ -1243,8 +1243,8 @@ type (
 
 	// Subscriber struct
 	Subscriber struct {
-		PayerID         string               `json:"payer_id"`
-		ShippingAddress ShippingDetail       `json:"shipping_address,omitempty"`
+		PayerID         string               `json:"payer_id,omitempty"`
+		ShippingAddress *ShippingDetail      `json:"shipping_address,omitempty"`
 		Name            CreateOrderPayerName `json:"name,omitempty"`
 		EmailAddress    string               `json:"email_address,omitempty"`
 	}
